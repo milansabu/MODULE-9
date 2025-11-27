@@ -35,8 +35,50 @@ To develop a Python class with functions to:
 
 ## 💻 PROGRAM:
 
-ADD CODE HERE
+class InsertionSorter:
 
+ def __init__(self):
+ 
+ self.data = []
+
+def create_list(self):
+
+ n = int(input("Enter the number of elements: "))
+ 
+ print("Enter the elements:")
+ 
+ for _ in range(n):
+ 
+ element = int(input())
+ 
+ self.data.append(element)
+ 
+ 
+ def insertion_sort(self):
+ 
+ for i in range(1, len(self.data)):
+ 
+ key = self.data[i]
+ 
+ j = i - 1
+ 
+ 
+ while j >= 0 and self.data[j] > key:
+ 
+ self.data[j + 1] = self.data[j]
+ 
+ j -= 1
+ 
+ self.data[j + 1] = key
+ 
+ 
+ def print_list(self):
+ 
+ print("Sorted List:", self.data)
 ## OUTPUT:
 
+<img width="93" height="171" alt="image" src="https://github.com/user-attachments/assets/927d78b7-8be7-4db5-a220-7ce004eb24e5" />
+
 ## RESULT:
+
+Thus the program has been successfully executed
